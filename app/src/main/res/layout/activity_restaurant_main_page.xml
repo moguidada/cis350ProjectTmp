@@ -6,4 +6,65 @@
     android:layout_height="match_parent"
     tools:context=".RestaurantMainPage">
 
+    <TextView
+        android:id="@+id/restaurant_name"
+        android:layout_width="113dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:text="Restaurant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="92dp"
+        android:text="Upload image"
+        app:layout_constraintEnd_toStartOf="@+id/write_review"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/write_review"
+        android:layout_width="160dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="16dp"
+        android:text="Write your review"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="167dp" />
+
+    <Button
+        android:id="@+id/picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pictures"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="272dp" />
+
+    <Button
+        android:id="@+id/review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reviews"
+        tools:layout_editor_absoluteX="261dp"
+        tools:layout_editor_absoluteY="272dp" />
+
+    <TextView
+        android:id="@+id/url"
+        android:layout_width="183dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="type img url here"
+        android:text="type img url here"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/restaurant_name" />
 </androidx.constraintlayout.widget.ConstraintLayout>
